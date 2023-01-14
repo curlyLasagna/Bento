@@ -11,24 +11,24 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
-	imageBackground: false,
+	name: 'Luis',
+	imageBackground: true,
 	openInNewTab: true,
-	twelveHourFormat: false,
+	twelveHourFormat: true,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingMorning: 'お早うございます！',
+	greetingAfternoon: 'こんにちは',
+	greetingEvening: 'こんばんは',
+	greetingNight: 'おやすみなさい',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
+	weatherKey: '79bb9d102489d1cd96c979adc4b21ea2', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
-	weatherUnit: 'C', // 'F', 'C'
+	weatherUnit: 'F', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
@@ -55,19 +55,19 @@ const CONFIG = {
 			id: '1',
 			name: 'Github',
 			icon: 'github',
-			link: 'https://github.com/',
+			link: 'https://github.com/https://github.com/curlyLasagna',
 		},
 		{
 			id: '2',
-			name: 'Mail',
+			name: 'Blackboard',
 			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
+			link: 'https://blackboard.towson.edu/ultra/course',
 		},
 		{
 			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
+			name: 'Udemy',
+			icon: 'graduation-cap',
+			link: 'https://www.udemy.com/',
 		},
 		{
 			id: '4',
@@ -83,9 +83,9 @@ const CONFIG = {
 		},
 		{
 			id: '6',
-			name: 'Odysee',
+			name: 'YouTube',
 			icon: 'youtube',
-			link: 'https://odysee.com/',
+			link: 'https://www.youtube.com/',
 		},
 	],
 
@@ -139,20 +139,20 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: '可愛いくてごめん',
+					link: 'https://www.youtube.com/watch?v=MPywGQPLJPo',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'ちゅ♡ちゅ♡ちゅ♡ぱにぱっ♡',
+					link: 'https://www.youtube.com/watch?v=kirh9QQ6msM',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: '「SS」',
+					link: 'https://www.youtube.com/watch?v=OvYGReapTIs',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: '「ノンフィクション」',
+					link: 'https://www.youtube.com/watch?v=P8sWM0zWAu0',
 				},
 			],
 		},
@@ -165,8 +165,8 @@ const CONFIG = {
 					link: 'https://www.linkedin.com',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'Hacker News',
+					link: 'https://news.ycombinator.com/',
 				},
 				{
 					name: 'Trello',
