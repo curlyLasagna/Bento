@@ -4,19 +4,15 @@
 // ╚═╝╚═╝╝╚╝ ╩ ╚═╝ 
 */
 
-/* 
-//  ┬  ┬┌─┐┬─┐┬┌─┐┌┐ ┬  ┌─┐┌─┐
-//  ┐┌┘├─┤├┬┘│├─┤├┴┐│  ├┤ └─┐
-//  ┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘ 
- */
+/* V A R I A B L E S */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"); /* Font Import */
 
 :root {
   /* Font Size */
   --fg-primary: 12vh; /* Time and Greetings */
   --fg-secondary: 3vh; /* Greetings and Weather widger */
-  --fg-date: 8vh; /* Date */
+  --fg-date: 4vh; /* Date */
   --fg-list: 2vh; /* Links List */
   --icon: 3vh; /* Icon Size */
 
@@ -54,17 +50,13 @@
   ); /* Filter color */
 }
 
-/* 
-//  ┌─┐┌┬┐┬ ┬┬  ┌─┐┌─┐
-//  └─┐ │ └┬┘│  ├┤ └─┐
-//  └─┘ ┴  ┴ ┴─┘└─┘└─┘ 
-*/
+/* S T Y L E S */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: 0.2s ease-in-out;
 }
 
@@ -135,26 +127,35 @@ body {
   justify-content: center;
 }
 
-.weatherBlock {
+.image-block {
   grid-column: 3 / span 2;
   grid-row: 1 / span 2;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.image-block:hover {
+  /* background-color: var(--accent); */
+  color: var(--sfg);
+  transform: translateY(-0.2rem);
+}
+
+.main-image {
+  --s: 10px;
+  /* position: absolute; */
+  height: 40vh;
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1 * var(--s));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .date {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
-}
-
-.weather {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* margin-top: 30px; */
 }
 
 .clock {
@@ -328,6 +329,9 @@ body {
   font-weight: bold;
   text-align: center;
   width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .listItem:hover {
   background-color: var(--accent);
@@ -347,7 +351,7 @@ body {
     grid-column: 1 / span 4;
   }
 
-  .weatherBlock {
+  .image-block {
     display: none;
   }
 
