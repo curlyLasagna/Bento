@@ -10,11 +10,11 @@
 
 :root {
   /* Font Size */
-  --fg-primary: 12vh; /* Time and Greetings */
-  --fg-secondary: 3vh; /* Greetings and Weather widger */
-  --fg-date: 4vh; /* Date */
-  --fg-list: 2vh; /* Links List */
-  --icon: 3vh; /* Icon Size */
+  --fg-primary: 12vw; /* Time and Greetings */
+  --fg-secondary: 3vw; /* Greetings and Weather widger */
+  --fg-date: 4vw; /* Date */
+  --fg-list: 2vw; /* Links List */
+  --icon: 3vw; /* Icon Size */
 
   /* Fonts Color */
   --fg: #3a3a3a; /* Foreground color */
@@ -356,7 +356,11 @@ body {
   }
 
   #greetings {
-    font-size: var(--fg-secondary);
+    font-size: var(--fg-list);
+  }
+
+  .clock {
+    --fg-primary: 15vw; /* Time and Greetings */
   }
 
   .linksBlockRight {
